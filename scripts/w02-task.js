@@ -6,7 +6,6 @@
 const fullName = "Paul Divine Onoja";
 const currentYear = new Date().getFullYear();
 const profilePicture = "./images/my-profile-pic.jpg";
-const profileName = "An image of me.";
 
 /* Step 3 - Element Variables */
 
@@ -19,7 +18,7 @@ const imageElement = document.getElementById("image");
 nameElement.innerHTML = `<strong>${fullName}<strong/>`;
 yearElement.textContent = currentYear.toString();
 imageElement.setAttribute(`src`, profilePicture);
-imageElement.setAttribute(`alt`, profileName);
+imageElement.setAttribute(`alt`, `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 const favFood = [
