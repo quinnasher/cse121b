@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = "Paul Divine Onoja";
 const currentYear = new Date().getFullYear();
-const profilePicture = "./images/my-profile-pic.jpg";
+const profilePicture = "./images/my-profile.jpg";
 
 /* Step 3 - Element Variables */
 

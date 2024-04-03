@@ -4,7 +4,7 @@
 
 const myProfile = {
   name: "Divine Paul",
-  photo: "./../images/my-profile-pic.jpg",
+  photo: "../images/my-profile.jpg",
   favoriteFoods: ["Jollof Rice", "Fried Rice", "white Rice and Stew", "Masa"],
   hobbies: ["Programming", "Coding", "Music"],
   placesLived: [],
