@@ -3,6 +3,7 @@
 /* Declare and initialize global variables */
 const templeElement = document.querySelector("#temples");
 const templeList = [];
+
 /* async displayTemples Function */
 const displayTemples = (temples) => {
   temples.forEach((temple) => {
@@ -21,7 +22,6 @@ const displayTemples = (temples) => {
 };
 
 /* async getTemples Function using fetch()*/
-
 const getTemples = async () => {
   try {
     const response = await fetch(
@@ -37,13 +37,11 @@ const getTemples = async () => {
 };
 
 /* reset Function */
-
 const reset = () => {
   templeElement.innerHTML = "";
 };
 
 /* filterTemples Function */
-
 const filterTemples = (temples) => {
   reset();
   const filter = document.querySelector("#filtered").value;

@@ -4,7 +4,7 @@
 
 const myProfile = {
   name: "Divine Paul",
-  photo: "../images/my-profile-pic.jpg",
+  photo: "./../images/my-profile-pic.jpg",
   favoriteFoods: ["Jollof Rice", "Fried Rice", "white Rice and Stew", "Masa"],
   hobbies: ["Programming", "Coding", "Music"],
   placesLived: [],
@@ -45,5 +45,6 @@ myProfile.placesLived.forEach((place) => {
   dtEl.textContent = place.place;
   ddEl.textContent = place.length;
 
-  document.querySelector("#places-lived").appendChild(dtEl).appendChild(ddEl);
+  document.querySelector("#places-lived").appendChild(dtEl);
+  document.querySelector("#places-lived").appendChild(ddEl);
 });
