@@ -69,14 +69,19 @@ const filterTemples = (temples) => {
         const dedicatedDate = new Date(temple.dedicated).getTime();
         return compareDate > dedicatedDate;
       });
-      console.log(oldestTemples);
       displayTemples(oldestTemples);
       break;
     }
 
     case "sorted": {
-      temples.sort((a, b) => a.templeName.localeCompare(b.templeName));
-      console.log(temples);
+      const sortedTemple = temples.toSorted((a, b) =>
+        a.templeName.localeCompare(b.templeName),
+      );
+      displayTemples(sortedTemple);
+      break;
+    }
+
+    case "all": {
       displayTemples(temples);
     }
   }
@@ -86,4 +91,6 @@ const filterTemples = (temples) => {
 document
   .querySelector("#filtered")
   .addEventListener("change", () => filterTemples(templeList));
-getTemples();
+getTemples()
+  .then(() => console.log("Temple got successfully"))
+  .catch(() => console.log("Their was an error getting temples"));
