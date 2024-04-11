@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 121b | W04: Programming Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="w01-task.html">W1 Task</a></li>
+        <li><a href="w03-task.html">W3 Task</a></li>
+        <li><a href="w04-task.html">W4 Task</a></li>
+        <li><a href="w05-task.html">W5 Task</a></li>
+        <li><a href="project.html">Project</a></li>
+      </ul>
+    </nav>
+    <main
+      class="flex flex-col md:flex-row flex-wrap gap-6 mt-40 items-center justify-between relative"
+    >
+      <section class="absolute left-0 right-0 justify-center w-[24rem] -top-10">
+        <!--        <select id="partOfSpeech" title="Choose a search filter.">-->
+        <!--          <option value="" disabled selected>Search Options</option>-->
+        <!--          <option value="noun">Noun</option>-->
+        <!--          <option value="adjective">Adjectice</option>-->
+        <!--        </select>-->
+        <div class="flex justify-center items-center gap-3 rounded-l-2xl mb-20">
+          <label class="inline-block shrink-0">
+            <input
+              id="searchValue"
+              class="border-2 border-slate-600 py-2.5 rounded-2xl px-4 outline-none"
+              type="search"
+              placeholder="enter word"
+            />
+          </label>
+          <button
+            id="searchWord"
+            class="bg-slate-700 shrink-0 inline-block py-2.5 px-4 rounded-2xl text-gray-200"
+            type="submit"
+          >
+            Search
+          </button>
+        </div>
+
+        <h1>Final Project</h1>
+        <h2>Fetch(): Word Definition</h2>
+
+        <select id="filtered" title="Choose a data filter.">
+          <option value="" disabled selected>Filter Words</option>
+          <option value="utah">Alphabetically</option>
+          <option value="notutah">Noun</option>
+          <option value="older">Verb</option>
+          <option value="all">No Filter</option>
+        </select>
+      </section>
+      <div id="words" class="mt-52"></div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <!--    <script>-->
+    <!--      document.getElementById("year").innerHTML = new Date().getFullYear();-->
+    <!--    </script>-->
+    <script src="scripts/project.js"></script>
+  </body>
+</html>

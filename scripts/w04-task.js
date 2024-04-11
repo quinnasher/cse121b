@@ -16,6 +16,7 @@ myProfile.placesLived.push(
   { place: "Lagos, Nigeria", length: "4 years" },
   { place: "Jos, Nigeria", length: "2 years" },
 );
+
 /* DOM Manipulation - Output */
 /* Name */
 document.querySelector("#name").textContent = myProfile.name;
